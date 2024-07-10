@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="3">
+  <title>My First Post</title>
+  <link rel="stylesheet" href="first.css">
+  <script defer src="first.js"></script>
+
+</head> 
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="https://www.firstinspires.org/sites/all/themes/first/assets/images/2020/FIRST_Horz_Reverse.svg" alt="FIRST logo">
+      </div>
+      <h1>My First Post</h1>
+    </header>
+    <div class="form-container">
+      <form onsubmit="submittedfromtheuser(event)">
+        <h2>Your post</h2>
+        <div class="input-group">
+          <label for="name">   Full name</label>
+          <input type="text" id="name" name="name" value="Jane Doe"  >
+        
+        </div>
+       
+        <div class="input-group">
+          <label for="color">Favorite color</label>
+          <select id="color" name="color" onchange="changeBackgroundColor()">
+              <option value="Blue">Blue </option>
+              <option value="Pink">Pink </option>
+              <option value="Purple">Purple</option>
+              <option value="Yellow">Yellow </option>
+
+          </select>
+      </div>
+      
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
